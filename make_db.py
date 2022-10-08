@@ -1,7 +1,7 @@
 import sqlite3 as sql #the as command in python renames the import so it can be called by whatever name the programer choses
 from os import path
 
-db_path = r"example.db" #put the path to your database followed by /nameOfDataBase.db in this string
+db_path = r"example.db" #put the path to your database followed by /name-of-database.db in this string for example C:/test-folder/example.db
 #for example Computer/user/exampleUser/Documents/db_Folder/games.db
 #creates a connection to the database and creates the database if it does not already exist
 connection = sql.Connection(db_path)
