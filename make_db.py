@@ -25,7 +25,7 @@ schema_string_table_three = f"create table {TABLE_THREE_NAME} ({table_three_sche
 
 table_schemas = (schema_string_table_one, schema_string_table_two, schema_string_table_three)
 
-table_one = [#this is a tuple, topples are immutable and can be passed as an argument in sqlite to create or edit a table
+table_one = [#this is a tuple, tuples are immutable and can be passed as an argument in sqlite to create or edit a table
     #I'm using an example of video games for this database but you will edit this topple to fit your particular database
     ("Minecraft", "Notch", 2011 ),
     ("Sekiro Shadows Die Twice", "From Software", 2019),
