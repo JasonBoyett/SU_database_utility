@@ -5,7 +5,7 @@
 import sqlite3 as sql #the "as" command in python renames the import so it can be called by whatever name the programer choses
 from os import path
 from sre_constants import SUCCESS #this path utility might be necessary for the student to make sure their database is saved in the proper location but it is not currently in use
-import webbrowser as web
+from  util import build_complete 
 
 db_path = r"example.db" #put the path to your database followed by /name-of-database.db in this string for example C:/test-folder/example.db
 #the lower case r next to this string turns it into a string literal which means it will ignore escape characters. So, no need for double backslashes or anything of that nature
@@ -76,6 +76,6 @@ if __name__ == '__main__':#this is the code that will execute when you run the p
         insert = insert[:-2]
         cursor.executemany(f"insert into {table_names[i]} values ({insert})", tables[i])
 
-    web.open_new("https://r.mtdv.me/database_build_complete") #if this runs then your build was successful
+    build_complete.confirm()
     #saves your database
     connection.commit()
