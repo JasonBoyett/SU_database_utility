@@ -72,7 +72,7 @@ if __name__ == '__main__':#this is the code that will execute when you run the p
         cursor.execute(table_schemas[i]) #this command creates the individual tables 
     
     for i in range(0,len(table_names)): #this takes the values you put into your tables and adds their values into the database table
-        insert = (("?, ")*len(tables[i][i])) #in order to populate the tables with data there needs to be a number of question marks 
+        insert = (("?, ")*len(tables[i][0])) #in order to populate the tables with data there needs to be a number of question marks 
         insert = insert[:-2]
         cursor.executemany(f"insert into {table_names[i]} values ({insert})", tables[i])
 
