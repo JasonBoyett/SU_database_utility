@@ -127,6 +127,6 @@ if __name__ == '__main__':#this is the code that will execute when you run the p
         insert = insert[:-2]
         cursor.executemany(f"insert into {table_names[i]} values ({insert})", tables[i])
 
-    build_complete.confirm()
+    # build_complete.confirm()
     #saves your database
     connection.commit()
