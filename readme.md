@@ -1,5 +1,5 @@
 # Database Creator
-This tool will help you create a SQLight database. This tool was originally created for Schreiner University's Into to Databases class but is open and available to the public. In order to use this tool please clone this repo to your local machine or online editor and follow the instructions below.
+This tool will help you create a SQLight database. This tool was created for Schreiner University's Intro to Databases class but is open and available to the public. To use this tool please clone this repo to your local machine or online editor and follow the instructions below.
 
 ---
 
@@ -16,7 +16,7 @@ This tool will help you create a SQLight database. This tool was originally crea
 ### Make sure you have Python installed:
 [Python](https://www.python.org/)
 
-### Either install a text editor or IDE onto your local machine or chose a web editor capable of interacting with git
+### Either install a text editor or IDE onto your local machine or choose a web editor capable of interacting with git
 
 #### Recommended local editors and IDEs:
 
@@ -32,7 +32,7 @@ This tool will help you create a SQLight database. This tool was originally crea
 
 ### Be sure your editor is configured for Python:
 
-[Setting up python for Visual Studio Code](https://code.visualstudio.com/docs/python/python-tutorial)
+[Setting up Python for Visual Studio Code](https://code.visualstudio.com/docs/python/python-tutorial)
 
 ### Make sure you understand Tables and Schemas in SQL
 I'm including documentation from SQLight's official page in case you need a refresher
@@ -61,7 +61,7 @@ If you do not know how to navigate in your terminal please refer to the followin
 
 [Linux](https://www.pluralsight.com/guides/beginner-linux-navigation-manual)
 
-### Step One: Provide path for Database
+### Step One: Provide a path for your Database
 
 On line 10 of make_db.py you will find a string literal that should look like this:
 
@@ -238,7 +238,7 @@ tables = (
     table_three
 )
 ```
-To add an extra table simple make another tuple to represent it and then add it to the tables tuple
+To add an extra table simply make another tuple to represent it and then add it to the tables tuple
 
 ```python
 table_one = (
